@@ -6,49 +6,58 @@
 		  </head>
 	<body>
         <?php
-	 // INTRODUCTION LES FONCTIONS
-			   
-			   
-	//compte le nombre de caractere contenu dans une  phrase.  
+	// FONCTIONS PHP AFFECTANT LES TABLEAUX
 	
-	        $nom1=strlen('Noubisiie');
-			echo '"Noubissie" compte '.$nom1.' caractères'.'<br/>';
-			
-			    
-	//compte le nombre de mot dans une phrase. 
-			$nom2=str_word_count('Salut à vous, je m\'appelle Noubissie wilfried');
-			echo 'Dans la phrase "Salut à vous, je m\'appelle Noubissie wilfried", il y\'a en tout '.$nom2.' mots'.'<br/>';
-			   
-	//permet de repeter une chaine de caractere un nombre definie de fois
-	        echo str_repeat('Salut',2).'<br/>';
-			   
-	//permet de remplacer un mot par un autre. NB: str_replace est sencible a la casse or str_ireplace ne l'est pas.
-	        $phrase = 'Bonjour à vous, comment allez vous?';
-			echo str_ireplace('bonjour','Salut',$phrase).'<br/>';
-			
-	//mettre en minuscule
-	        echo strtolower('Bonjour comment vous appelez vous?').'<br/>';
-			
-	// mettre en majuscule
-			echo strtoupper('salut moi c\'est Noubissie wilfried').'<br/>';
-
-   //recherche la lettre o dans le mot bonjour
-			$nom3= strpos('Noubissie','o');
-            echo 'Dans le nom "Noubissie", la lettre "o" se trouve à la position numero '.$nom3.'<br/>';
-			
-	//recherche le mot tous et renovie la position de la premiere lettre
-	        echo 'Le nom "Noubissie" se trouve à la position numero '.strpos ('Salut à vous, moi c\'est Noubissie wilfried','Noubissie').'<br/>';
-			
-    // permet de ne pas considierer les balises html et de les hafficher;
-	        $html = 'Ceci est un affichage des balises html à l\'exemple de la balise <body></body> qui permet de contenir le corps du html';
-	        echo htmlspecialchars($html) .'<br/>';
-			
-	// NB: nl2br parmet de rentrer a la ligne sans <br/>
-	        $saut= 'Ceci permet de faire un saut de ligne en appuis simplement sur "entrer" comme suit:
-			La je viens de faire un saut de ligne';
-			echo nl2br($saut);
-			   
-				
+	// la fonction array_keys retourne les clefs d'un tableau dans un nouveau tableau
+	$voitures = array(
+	                      'Citroen' => 'DS3',
+						  'Renault' => 'Clio',
+						  'Peugeot' => '306',
+						  'Peugeot2' => 306);
+						echo '<pre>';
+					print_r(array_keys($voitures));
+					    echo '</pre>';
+								
+					
+    // la fonction array_values retourne les valeurs d'un tableau sans les clefs dans un nouveau tableau	
+    $loisirs = array(
+                          'Sport' => 'Trail',
+						  'Voyage' => 'Ecosse',
+						  'Musique' => 'Guitare'
+	);	echo '<pre>';
+	     print_r(array_values($loisirs));
+		 echo '</pre>';
+		 
+	// la fonction array_key_exists permet de verifier si une clef existe et renvois true si la clef est presente et false dans le cas contraire. NB: il est sensible a la casse
+	$enseignement= array(
+	                      'Math' => 'LOPEZ',
+						  'Info' => 'BICE',
+						  'Physique' => 'TAKEGNI'
+	);
+	   if(array_key_exists('physique',$enseignement)){
+		   echo ' la clef existe'.'<br/>';
+	   }
+	   else{
+		   echo 'la clef n\'existe pas'.'<br/>';
+	   }
+	   
+	   
+	   //la fonction array_search permet de rechercher une valeur dans un tableau et retourner la clef qui lui est associé
+	   if(array_search('LOPEZ' and 'BICE',$enseignement)){
+		   echo 'L\'element rechercher existe'.'<br/>';
+	   }
+	   else{
+		   echo 'L\'element rehercher n\'existe pas'.'<br/>';
+	   };
+	   
+	   //la fonction in_array va rechercher une valeur dans un tableau et renvoyer true si l'element est present et false si l'element est absent
+	   $prenoms= array('pierre', 'paul', 'jacque');
+	   if(in_array('pierre',$prenoms)){
+		   echo 'present'.'<br/>';
+	   }
+	   else{
+		   echo 'absent'.'<br/>';
+	   }
 
 		?>
 
