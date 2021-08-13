@@ -1,0 +1,1 @@
+<p> Dans ce nouveau chapitre, nous allons parler des differences entre les instructions include et require</p>
