@@ -8,18 +8,15 @@
      <?php
 	    include_once('visiteur.class.php');// once permet d'inclure une fois
 		$visiteur1 = new Visiteur;  // new permet d'intensier la class
-		$visiteur2 = new Visiteur;
 		
 		$visiteur1 -> set_prenom('Wilfried');
-		$visiteur2 -> set_prenom('Rolande');
 		
-		echo 'Bonjour '.$visiteur1 -> get_prenom().'<br/>';
-		echo 'Bonjour '.$visiteur2 -> get_prenom().'<br/>';
-/* deux notions a retenir: l'héritage et l'encapsulation .
-     l'héritage veut dire qu'on peut créer des class filles a partir des class meres et ces class filles disposeront par defaut de toutes les methodes et propriétées de leurs classe meres
-	 et nous pourrons bien evidement ajourter de nouvelle methodes ou propriétées au class filles. On dit egalement qu'une class fille va etandre les fonctionnalités d'une class mere.
- */
-
+		$visiteur1 -> set_nom('Noubissie');
+		echo 'Ton nom ?'.$visiteur1 ->nom;
+		echo 'Ton prenom ? '.$visiteur1 ->prenom;
+ // ici, le nom va bien s'afficher mais le prenom ne va pas s'afficher car on a a definie le nom comme public or le prenom a ete defini comme private et on ne peut pas acceder en dehors de la class		
+        
+		
 	 ?>
   </body>
  </html>
