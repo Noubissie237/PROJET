@@ -1,6 +1,6 @@
 <?php
 	 class Visiteur{
-		  private $prenom; // ici, prenom represente la propriété car on a mis un "private". et pour les  methodes, on use un "public"
+		  public $prenom; // ici, prenom represente la propriété car on a mis un "private". et pour les  methodes, on use un "public"
 		  public $nom;
 		  
 		  public function set_prenom($nouveau_prenom){
