@@ -1,0 +1,26 @@
+body{
+	background-color:#ccc;
+}
+#titre{
+	text-align:center;
+	font-family:forte;
+	text-shadow:0px 0px 20px black;
+}
+.small_tire{
+	
+}
+#centre{
+	display:block;
+	width:400px;
+	border: 1px solid gray;
+	border-radius:20px;
+	margin-left:40%;
+	margin-right:50%;
+	margin-top:50px;
+}
+#valider{
+	background-color:#00ff70;
+}
+#annuler{
+	background-color:#f00000;
+}

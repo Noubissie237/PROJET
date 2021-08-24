@@ -1,0 +1,146 @@
+@charset "utf-8";
+body{
+	  background-color:#cccfff;
+    }
+#corps{
+	width:80%;
+	height:100%;
+	background-color:#ffffff;
+	margin:auto;
+	border-radius:10px 10px;
+	border:2px solid rgb(214,16,5);
+      }
+#logo{
+	width:10%;
+	height:10%;
+	vertical-align:middle;
+	margin-left:20px;
+     }
+#titre_site{
+	background-color:#fde5d9;
+	border:1px solid #fde5d9;
+	border-radius:10px 10px 0p 0px;
+     }
+#banniere{
+	background-color:#00ff00;
+	border:1px solid #1affff;
+         }
+
+header h2{
+    display: inline-block;
+    font-family:"forte";
+    color:#14237e;	
+	font-weight:bold;
+	font-size:50px;
+	text-align:center;
+	text-shadow:0px 3px 2px #ffffff;
+             }
+header h1{
+	font-family:"forte";
+	color:#14237e;
+	text-align:center;
+	text-shadow:0px 3px 2px #ffffff;
+         }
+header h3{
+	font-family:"cambria";
+	text-align:center;
+	color:#ff1215;
+	text-shadow: 0px 3px 2px #ffffff;
+	font-style:italic;
+         }
+nav{
+	width:100%;
+	text-align:center;
+	font-family:"arial";
+   }
+ nav ul{
+	list-style-type:none; 
+	background-color:#666;
+	margin:0;
+	
+       }
+nav ul li{
+	display:inline-block;
+	margin-left:18px;
+	padding:10px;
+	border:2px; dotted #999999;
+         }
+nav a{
+	font-size: 20px;
+	color:#ccc;
+	text-decoration:none;
+     }
+nav a:hover{
+	font-size:25px;
+	color:#6cf;
+	text-decoration:none;
+           }
+section{
+	width:70%;
+       }
+figcaption{
+	color:#333;
+	font-family:"impact";
+	font-size:12px;
+          }
+aside{
+	width:25%;
+     }
+article, section, aside{
+	display:inline-block;
+	vertical-align:top;
+	border:1px solid #fde5d9;
+	border-radius:10px 10px 0px 0px;
+	box-shadow: 0px 0px 30px #aaa;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:5px;
+	margin-right:5px;
+                       }
+article p, aside p{
+	font-size: 18px;
+	color:#000;
+	padding-left:15px;
+}
+.titreinfo{
+font-family:"cambria";
+font-weight:bold;
+color:black;
+padding-left:10px;
+          }
+figure img{
+	display:inline-block;
+	border:1px solid rgb(214,16,5);
+	margin:2px;
+	width:180px;
+	height:250px;
+          }
+footer, footer h2{
+	font-family:arial;
+	font-size:14px;
+	background-color:#000000;
+	color:#cccccc;
+	padding-left:5px;
+	padding-top:5px;
+                 }
+footer a{
+	text-decoration:none;
+	color:#cccccc;
+        }
+footer ul{
+	display:inline-block;
+	vertical-align:top;
+	margin-left:50px;
+         }
+footer p{
+	display:inline-block;
+	margin-left:100px;
+	text-align:center;
+        }
+#fin{
+      color:red;
+	  font-family:harrington;
+	  font-size:40px;
+	  text-shadow: 0px 2px 5px yellow;
+    }
+
